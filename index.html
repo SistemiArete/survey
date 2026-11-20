@@ -1,2 +1,23 @@
-Test Survey
-KEY = null
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Key</title>
+</head>
+<body>
+
+<h1>Test Survey</h1>
+
+<div id="risultato"></div>
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+const key = params.get("key");
+
+document.getElementById("risultato").innerHTML =
+    "<h2>KEY = " + key + "</h2>";
+
+</script>
+
+</body>
+</html>
